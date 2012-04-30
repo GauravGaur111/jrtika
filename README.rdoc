@@ -1,6 +1,10 @@
 = jrtika
 
-JRuby Tika connector gem to read text and metadata from files using Apache Tika.
+JRUBY Tika connector to read text and metadata from files using Apache Tika 1.1.
+ Usage: Jrtika.read(full_file_path) where full_file_path is the full path of the file including file names. 
+ Returns : Hash containing text and metadata of the document. {:text => "text of the document extracted by tika", :metadata => "metadata of the document determined by tika"}
+ Uses Tika AutoDetectParser to detect file type. Supported file types are at : http://tika.apache.org/1.1/formats.html
+ Uses Tika BodyContentHandler as the handler.  
 
 == Contributing to jrtika
  
