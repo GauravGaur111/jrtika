@@ -18,7 +18,7 @@ Jeweler::Tasks.new do |gem|
   gem.homepage = "http://github.com/gauravgaur111/jrtika"
   gem.license = "MIT"
   gem.summary = %Q{JRuby Tika connector to read text and metadata from files using Apache Tika}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.description = %Q{JRUBY Tika connector to read text and metadata from files using Apache Tika 1.1. Usage: Jrtika.read(full_file_path)}
   gem.email = "gauravgaur111@gmail.com"
   gem.authors = ["gauravgaur111"]
   # dependencies defined in Gemfile

@@ -1,6 +1,6 @@
 = jrtika
 
-Description goes here.
+JRuby Tika connector gem to read text and metadata from files using Apache Tika.
 
 == Contributing to jrtika
  
