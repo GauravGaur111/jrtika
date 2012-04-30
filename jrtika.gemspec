@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "jar/tika-app-1.1.jar",
+    "jrtika.gemspec",
     "lib/jrtika.rb",
     "test/helper.rb",
     "test/test_jrtika.rb"
