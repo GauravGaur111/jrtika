@@ -11,12 +11,12 @@ class Jrtika
     @RESOURCE_NAME_KEY = ""
 
         is = java.io.FileInputStream.new(file_path)
-        parser = org.apache.tika.parser.AutoDetectParser.new()  #will work for all acceptable file types
+        parser = org.apache.tika.parser.AutoDetectParser.new()
 
-        handler = org.apache.tika.sax.BodyContentHandler.new()  #this will contain the parsed output
+        handler = org.apache.tika.sax.BodyContentHandler.new(-1)
         meta = org.apache.tika.metadata.Metadata.new()
 
-        meta.set(@RESOURCE_NAME_KEY,file_path)  #setting file name for AutoDetectParser
+        meta.set(@RESOURCE_NAME_KEY,file_path)
 
         parser.parse(is, handler, meta)
         is.close()
